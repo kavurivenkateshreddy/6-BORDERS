@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDERS STYLES</title>
+    <style>
+        h1{background-color:cyan;color:red;text-align:center;border-style: dashed;}
+        h2 {color:rgb(237, 92, 52);}
+        h3 {color:rgb(7, 248, 39);text-decoration:underline;}
+        #output {text-align:center;font-size:25px;color:blue;text-decoration:underline;}
+
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+
+        p.one {border-style: solid;border-width: 5px;}
+        p.two {border-style: solid;border-width: medium;}
+        p.three {border-style: dotted;border-width: 2px;}
+        p.four {border-style: dotted;border-width: thick;}
+        p.five {border-style: double;border-width: 15px;}
+        p.six {border-style: double;border-width: thick;}
+
+        p.red {border-style: solid;border-color: red;}
+        p.green {border-style: solid;border-color: green;} 
+        p.blue {border-style: dotted;border-color: blue;}
+
+        /* One value */
+        p.oneborderstyle {border-style: dotted}
+        /* Two values */
+        p.twoborderstyle  {border-style: dotted solid;}
+        /* Three values */
+        p.threeborderstyle  {border-style: dotted solid double;}
+        /* Four values */
+        p.fourborderstyle  {border-style: dotted solid double dashed;}
+        /* EXAMPLE 2 */
+        p.side {border-top-style: dotted;border-right-style: solid;border-bottom-style: dotted;border-left-style: solid;}
+
+        p.normal {border: 2px solid red;padding: 5px;}
+        p.round1 {border: 2px solid red;border-radius: 5px;padding: 5px;}
+        p.round2 {border: 2px solid red;border-radius: 8px;padding: 5px;}
+        p.round3 {border: 2px solid red;border-radius: 12px;padding: 5px;}
+
+        p.shorthand {border: 5px solid red;}
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <p><h1><u>BORDERS</u></h1></p>
+    <P>---> The CSS border properties allow you to specify the style, width, and color of an element's border.</P>
+    <P>Here we have the following border properties. They are :</P>
+    <p><h2><ol type="1">
+        <li>border styles</li>
+        <li>border width</li>
+        <li>border color</li>
+        <li>border sides</li>
+        <li>rounded boredr</li>
+        <li>border shorthand</li><br>
+    </ol></h2></p>
+    <p><ol type="1">
+        <li><h2><u>border-style</u></h2></li>
+        <p>---> The border-style property specifies what kind of border to display.</p>
+        <p>---> The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        p.dotted {border-style: dotted;}<br>
+        p.dashed {border-style: dashed;}<br>
+        p.solid {border-style: solid;}<br>
+        p.double {border-style: double;}<br>
+        p.groove {border-style: groove;}<br>
+        p.ridge {border-style: ridge;}<br>
+        p.inset {border-style: inset;}<br>
+        p.outset {border-style: outset;}<br>
+        p.none {border-style: none;}<br>
+        p.hidden {border-style: hidden;}<br>
+        p.mix {border-style: dotted dashed solid double;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p class="dotted" &gt The border-style property specifies what kind of border to display. &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p><br>
+        <center><p class="dotted">A dotted border.</p><br>
+        <p class="dashed">A dashed border.</p><br>
+        <p class="solid">A solid border.</p><br>
+        <p class="double">A double border.</p><br>
+        <p class="groove">A groove border. The effect depends on the border-color value.</p><br>
+        <p class="ridge">A ridge border. The effect depends on the border-color value.</p><br>
+        <p class="inset">An inset border. The effect depends on the border-color value.</p><br>
+        <p class="outset">An outset border. The effect depends on the border-color value.</p><br>
+        <p class="none">No border.</p><br>
+        <p class="hidden">A hidden border.</p><br>
+        <p class="mix">A mixed border.</p><br></center>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        <li><h2><u>border width</u></h2></li>
+        <p>---> The border-width property specifies the width of the four borders.</p>
+        <p>---> The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        p.one {border-style: solid;border-width: 5px;}<br>
+        p.two {border-style: solid;border-width: medium;}<br>
+        p.three {border-style: dotted;border-width: 2px;}<br>
+        p.four {border-style: dotted;border-width: thick;}<br>
+        p.five {border-style: double;border-width: 15px;}<br>
+        p.six {border-style: double;border-width: thick;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p class="one" &gt The border-width property specifies the width of the four borders. &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <center><p id="output">OUTPUT</p><br>
+        <p class="one">border-width: 5px.</p><br>
+        <p class="two">border-width: medium.</p><br>
+        <p class="three">border-width: 2px.</p><br>
+        <p class="four">border-width: thick.</p><br>
+        <p class="five">border-width: 15px.</p><br>
+        <p class="six">border-width: thick.</p><br></center>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        <li><h2><u>border color</u></h2></li>
+        <p>---> The border-color property is used to set the color of the four borders.</p>
+        <p>---> Note: If border-color is not set, it inherits the color of the element.</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        p.red {border-style: solid;border-color: red;}<br>
+        p.green {border-style: solid;border-color: green;} <br>
+        p.blue {border-style: dotted;border-color: blue;}<br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p class="red" &gt The border-color property is used to set the color of the four borders. &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p><br>
+        <center><p class="red">A solid red border</p><br>
+        <p class="green">A solid green border</p><br>
+        <p class="blue">A dotted blue border</p><br></center>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        <li><h2><u>border sides</u></h2></li>
+        <p>---> you have seen that it is possible to specify a different border for each side.</p>
+        <p>---> In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+        <p> So, here is how it works:<br><br>
+                
+            If the border-style property has one value:<br><br>
+            ---> border-style: dotted;<br>
+            . all four borders are dotted<br><br>
+
+            If the border-style property has two values:<br><br>
+            ---> border-style: dotted solid;<br>
+            . top and bottom borders are dotted<br>
+            . right and left borders are solid<br><br>
+
+            If the border-style property has three values:<br><br>
+            ---> border-style: dotted solid double;<br>
+            . top border is dotted<br>
+            . right and left borders are solid<br>
+            . bottom border is double<br><br>
+
+            If the border-style property has four values:<br><br>
+            ---> border-style: dotted solid double dashed;<br>
+            . top border is dotted<br>
+            . right border is solid<br>
+            . bottom border is double<br>
+            . left border is dashed<br><br></p>
+        <h3>EXAMPLE : 1</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        /* One value */<br>
+        p.one border style {border-style: dotted}<br>
+        /* Two values */<br>
+        p.two border style  {border-style: dotted solid;}<br>
+        /* Three values */<br>
+        p.three border style  {border-style: dotted solid double;}<br>
+        /* Four values */<br>
+        p.four border style  {border-style: dotted solid double dashed;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p class="oneborderstyle" &gt From the examples on the previous pages, you have seen that it is possible to specify a different border for each side. &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <center><p id="output">OUTPUT</p><br>
+        <p class="oneborderstyle">1 border style.<br></p>
+        <p class="twoborderstyle">2 different border styles.<br></p>
+        <p class="threeborderstyle">3 different border styles.<br></p>
+        <p class="fourborderstyle">4 different border styles.<br></p></center>
+        <h3>EXAMPLE : 2</h3>
+        p {border-top-style: dotted;border-right-style: solid;border-bottom-style: dotted;border-left-style: solid;}<br>
+        <center><p id="output">OUTPUT</p><br>
+        <p class="side">all four borders in single inline.</p></center>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        <li><h2><u>rounded boredr</u></h2></li>
+        <p>---> The border-radius property is used to add rounded borders to an element:</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        p.normal {border: 2px solid red;padding: 5px;}<br>
+        p.round1 {border: 2px solid red;border-radius: 5px;padding: 5px;}<br>
+        p.round2 {border: 2px solid red;border-radius: 8px;padding: 5px;}<br>
+        p.round3 {border: 2px solid red;border-radius: 12px;padding: 5px;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p class="normal" &gt The border-radius property is used to add rounded borders to an element: &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <center><p id="output">OUTPUT</p><br>
+            <p class="normal">Normal border</p>
+            <p class="round1">Round border</p>
+            <p class="round2">Rounder border</p>
+            <p class="round3">Roundest border</p></center>
+            
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+       <li><h2><u>border shorthand</u></h2></li>
+       <p>---> To shorten the code, it is also possible to specify all the individual border properties in one property.</p>
+       <p>---> The border property is a shorthand property for the following individual border properties:</p><br><br>
+       <p>.border-width :<br>
+        . border-style (required)<br>
+        . border-color<br></p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        p.shorthand {border: 5px solid red;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p class="shorthand" &gt To shorten the code, it is also possible to specify all the individual border properties in one property. &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <center><p id="output">OUTPUT</p><br>
+        <p class="shorthand">This property is a shorthand property for border-width, border-style, and border-color.</p>
+    
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+</ol></h2></p>
+
+</body>
+</html>
